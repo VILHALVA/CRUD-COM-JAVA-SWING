@@ -21,16 +21,16 @@ O aplicativo `CRUD COM JAVA SWING` foi desenvolvido com Java Swing e MySQL é um
 
 ## EXECUTANDO O PROJETO:
 1. **Configuração do Banco de Dados:**
-   - Antes de executar o app, é necessário importar o arquivo `./DATABASE/DATABASE.sql para o seu banco de Dados Mysql.
+   - Antes de executar o app, é necessário importar o arquivo `./DATABASE/DATABASE.sql` para o seu banco de Dados Mysql.
 
 2. **Configuração do PHP:**
    - Abra o arquivo `CODIGO\src\main\java\com\mycompany\crudswing\DatabaseConnection.java` e ajuste as configurações do banco de dados:
 
-     ```java
+  ```java
     private static final String URL = "jdbc:mysql://localhost:3306/crud_db";
     private static final String USER = "root";
     private static final String PASSWORD = "";
-     ```
+  ```
 
 3. **Executando no NetBeans IDE:**
    1. **Inicie o NetBeans:**
