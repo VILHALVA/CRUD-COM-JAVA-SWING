@@ -32,26 +32,21 @@ O aplicativo `CRUD COM JAVA SWING` foi desenvolvido com Java Swing e MySQL é um
     private static final String PASSWORD = "";
   ```
 
-3. **Executando no NetBeans IDE:**
-   1. **Inicie o NetBeans:**
-      Abra o NetBeans IDE a partir do menu Iniciar (Windows) ou do lançador de aplicativos (macOS).
+3. **Certifique-se de que o projeto esteja compilado:**
+   Antes de executar o projeto, você deve garantir que ele foi compilado corretamente. Navegue até o diretório `./CODIGO`, e use o seguinte comando para compilar:
 
-   2. **Navegue até o Projeto:**
-      No menu superior, clique em "Arquivo" (ou "File" em inglês) e escolha "Abrir Projeto" (ou "Open Project").
+   ```bash
+   mvn clean install
+   ```
 
-   3. **Selecione o Diretório do Projeto:**
-      Navegue até o diretório `CODIGO`, onde está localizado o projeto e selecione a pasta principal. Esta pasta contém o arquivo `pom.xml`.
+4. **Executar o projeto:**
+   Para executar a aplicação Swing com o Maven, usando a classe principal definida no seu `pom.xml`, use o comando:
 
-   4. **Abra o Projeto:**
-      Selecione a pasta do projeto e clique em "Abrir" (ou "Open" em inglês).
+   ```bash
+   mvn exec:java
+   ```
 
-   5. **Aguarde a Abertura:**
-      O NetBeans irá carregar o projeto. Isso pode levar alguns momentos, dependendo do tamanho do projeto e da velocidade do seu computador.
-
-   6. **Projeto Aberto:**
-      Uma vez que o projeto é carregado com sucesso, ele aparecerá no painel "Projetos" no canto esquerdo do IDE, e você poderá executa-lo clicando em `Run`.
-
-4. **Interagindo com APP:**
+5. **Interagindo com APP:**
    1. **Interface do Usuário:**
       - Ao iniciar o aplicativo, você verá uma interface com campos para inserir nome, email e telefone de um novo usuário.
       - Abaixo dos campos de entrada, há botões para adicionar, atualizar e deletar usuários, além de uma tabela que exibe todos os usuários cadastrados.
